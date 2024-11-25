@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
-const port = 3000;
+const port = 3001;
 
 //static files
 
@@ -101,6 +101,4 @@ app.post('/posts/:id/delete', (req, res) => {
 
 
 
-app.listen(port, () => {
-    console.log(`listening on port http://localhost:${port}`);
-});
+export default app;
