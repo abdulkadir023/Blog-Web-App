@@ -1,0 +1,111 @@
+body {
+    background-color: white;
+    font-family: "Work Sans", sans-serif;
+}
+nav {
+    float: right;
+    margin-right: 8rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    position: relative;
+}
+.home-nav {
+    margin-right: 3rem;
+    color: black;
+}
+.create-nav {
+    color: black;
+    margin-right: 3rem;
+}
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    grid-auto-rows: minmax(300px, 1fr); /* Uniform row heights */
+    gap: 40px; /* Space between posts */
+    max-width: 1200px; /* Restrict grid width */
+    margin: 0 auto; /* Center the grid */
+    justify-items: center; /* Center grid items horizontally */
+    align-items: center; /* Center grid items vertically */
+  
+}
+.post {
+    background-color: #f9f9f9; /* Light background for posts */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Enable flexible layout */
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: space-between; /* Spread content evenly */
+    min-height: 300px; /* Enforce minimum height */
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+}
+.create-blog a{
+    color: white;
+    text-decoration: none;
+}
+hr {
+    border-color: blue;
+ }
+.edit a{
+    color: white;
+    text-decoration: none;
+}
+.view-post {
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: aliceblue;
+  
+}
+.view-post h1 {
+    text-align: center;
+}
+.content {
+
+}
+textarea {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about-img {
+    border-radius: 30px;
+    margin-top: 6rem;
+}
+.links {
+    display: flex;
+}
+footer {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:1200px){
+    .sub-heading{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .blogs {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Smaller columns */
+    }
+}

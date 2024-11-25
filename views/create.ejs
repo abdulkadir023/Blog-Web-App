@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+<main>
+  <h1>Create a New Post</h1>
+  <form action="/create" method="POST">
+    <div class="mb-3">
+      <label for="author" class="form-label">Author</label>
+      <input type="text" class="form-control" id="author" name="author" required>
+    </div>
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" name = "title" required>
+    </div>
+    <div class="mb-3 content">
+      <label for="content" class="form-label">Content</label><br>
+      <textarea id="content" name="content" required></textarea>  
+    </div>
+    <button type="submit" class="btn btn-primary">Create Post</button>
+
+  </form>
+</main>
+<%- include('partials/footer') %>
+

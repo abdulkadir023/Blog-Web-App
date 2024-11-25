@@ -1,0 +1,21 @@
+<%- include('partials/header') %>
+
+
+
+    <div class="card">
+        <div class="card-body view-post">
+          <h1 class="card-title"><%= post.title %></h1>
+          <p class="card-text "><%= post.content %></p>
+          <button type = "button" class="btn btn-primary edit"> <a href="/posts/<%= post.id %>/edit">Edit</a> </button>
+          <form action="/posts/<%= post.id %>/delete" method="POST" style="display:inline;">
+            <button type="submit" class="btn btn-outline-secondary px-4">Delete</button>
+          </form>
+        </div>
+      </div>
+
+
+
+
+
+<%- include('partials/footer') %>
+
